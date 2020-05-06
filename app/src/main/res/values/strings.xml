@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TasksDates</string>
+    <string name="chooseStartDate">Дата-время старта задачи:</string>
+    <string name="chooseEndDate">Дата-время окончания задачи:</string>
+    <string name="btnOK">OK</string>
+    <string name="error">Ошибка</string>
+    <string name="start">старт:</string>
+    <string name="end">окончание:</string>
+</resources>
