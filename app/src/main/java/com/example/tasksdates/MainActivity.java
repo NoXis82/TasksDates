@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        startDate();
-        endDate();
-        btnOk();
+        initStartDate();
+        initEndDate();
+        actionBtnOk();
     }
 
     public void initView() {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mEndDateCalendar.setVisibility(View.GONE);
     }
 
-    public void btnOk() {
+    public void actionBtnOk() {
         Button mBtnOK = findViewById(R.id.btnOK);
         mBtnOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void startDate() {
+    public void initStartDate() {
         mChooseStartDate = findViewById(R.id.chooseStartDate);
         mChooseStartDate.setOnClickListener(new View.OnClickListener() {
 
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void endDate() {
+    public void initEndDate() {
         mChooseEndDate = findViewById(R.id.chooseEndDate);
         mChooseEndDate.setOnClickListener(new View.OnClickListener() {
 
